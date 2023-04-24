@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang=en>
+<head>
+	<link rel="stylesheet" href="stylesheet.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript">
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  var y = document.getElementById("icon-x");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+    y.className = "fa fa-window-close";
+  } else {
+    x.className = "topnav";
+    y.className = "fa fa-bars";
+  }
+}
+	</script>
+</head>
+<body>
+	<div>
+	<header class=fixed>
+		<div class="center">
+			<nav>
+			<h2 style="float:left">Webbisivu</h2>
+			<div class="topnav" id="myTopnav" style="float:right">
+  				<a href="#mita">Mitä?</a>
+  				<a href="#testimonials">Suosittelijat</a>
+  				<a href="#contact">Yhteystiedot</a>
+  				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    			<i class="fa fa-bars" id="icon-x" style="margin-top:-50px;"></i>
+  				</a>
+			</div>
+			</nav>
+		</div>
+	</header>
+	<main style="margin-top:100px">
+		<div class="center">
+			<div class="content-box">
+				<section id="mita">
+					<h2 style="padding:10px 0 0 20px;color:#64a9bb">Mitä mitä?</h2>
+					<p>Meiltä saat uskomattoman hyviä piirakoita.</p>
+				</section>
+			</div>	
+			<section id="testimonials">
+			<div class="content-box">
+					<h2 style="padding:10px 0 0 20px;color:#64a9bb">Suosittelijat</h2>
+					<p><q>Meidän koko firman tulos parani tuhat ja sata prosenttia piirakoilla.</q><br> <span style="float:right;"><b>&mdash;Pertsan Putkiurakointi</b></span></p>
+					<p><q>Sunnuntain sää meni oikein datasta johdetulla satunnaislukugeneraattorilla</q> <br> <span style="float:right;"><b>&mdash;Pekka Pouta</b></span></p>
+			</div>
+			</section>
+			<div class="content-box">
+				<section id="contact">
+					<h2 style="padding:10px 0 0 20px;color:#64a9bb">Ota yhteyttä<br/>
+					</h2>
+					<address>
+					<p>Website HQ <br/>Pylvästie 123, 99990 Nuorgam</p>
+					<p>Tel. 358-11 22 333 444
+					<p>Y-tunnus: 123456789-123</p>
+					</address>
+					<h2 style="margin:auto;width:200px;"> 						
+						<i class="fa fa-linkedin-square fa-4" aria-hidden="true"></i>Linkedin<br/>
+						<i class="fa fa-facebook-official fa-4" aria-hidden="true"></i>Facebook
+					</h2>
+					<br/>
+				</section>
+			</div>		
+		</div>
+	</main>
+	<div style="height:50px;margin-top:50px">
+		<footer>
+			Copyright &copy; Webbidesign by master blaster!
+		</footer>
+	</div>
+	</div>
+</body>

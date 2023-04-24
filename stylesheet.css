@@ -1,0 +1,160 @@
+
+html,body { height: 100%; margin: 0px; padding: 0px; }
+
+body {
+	font-family: "Open Sans", sans-serif;
+	line-height: 1.6;
+	background-color: #ccc;
+	min-width: 328px;
+	margin: 0;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 3em;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 2em;
+}
+
+header {
+  background-color: #4B4B4B;
+  color: #fff;
+  padding: 12px 0 12px;
+  display: flow-root;
+  margin: 0 auto;
+  height: 50px;
+  line-height: 0;
+  vertical-align: top;
+}
+
+footer {
+	border-top: 4px solid #fff;
+}
+
+p {
+	padding:0 0 15px 20px;
+}
+
+p {
+  color: #45004D;
+  font-size: 1.125rem;
+}
+.content-box > p {
+	margin-right:20px;
+	padding-bottom: 40px;
+}
+@media screen and (min-width: 900px) {
+	.center {
+	  margin: auto;
+	  width: 800px;
+	}	
+}
+
+@media screen and (max-width: 899px){
+	.center {
+		margin: auto;
+		width: 90%;
+	}
+	h2 {font-size:1.5em;}
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('OpenSans-Regular-webfont.eot');
+    src: url('OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('OpenSans-Regular-webfont.woff2') format('woff2'),
+         url('OpenSans-Regular-webfont.woff') format('woff'),
+         url('OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.gradient {
+	height:100%;
+
+	background: rgb(62,131,138);
+	background: -moz-linear-gradient(0deg, rgba(62,131,138,1) 0%, rgba(100,169,187,1) 35%, rgba(152,238,255,1) 100%);
+	background: -webkit-linear-gradient(0deg, rgba(62,131,138,1) 0%, rgba(100,169,187,1) 35%, rgba(152,238,255,1) 100%);
+	background: linear-gradient(0deg, rgba(62,131,138,1) 0%, rgba(100,169,187,1) 35%, rgba(152,238,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3e838a",endColorstr="#98eeff",GradientType=1);
+}
+
+.content-box {
+	background: rgba(255,255,255,0.5);
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.fixed {
+	position: fixed;
+	width: 100%;
+	top:0;
+}
+
+//top navigation
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+	float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 24px 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;float:left;width: 100%;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    background-color: #04AA6D;
+    right: 0;
+    top: -40px;
+  }
+  .topnav.responsive a {
+  	background-color: #04AA6D;
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}

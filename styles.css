@@ -1,0 +1,95 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  text-align: center
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+}
+
+nav ul li a {
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.language-toggle {
+  cursor: pointer;
+  border: 1px solid #fff;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.hero-section {
+  height: 500px;
+  background-image: url('hero-image.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+  text-shadow: 1px 1px #333;
+}
+
+.hero-section p {
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+  text-shadow: 1px 1px #333;
+}
+
+.about-section,
+.products-section,
+.contact-section {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f2f2f2;
+}
+
+.about-section h2,
+.products-section h2,
+.contact-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-section p,
+.products-section p,
+.contact-section p {
+  font-size: 1rem;
+  color: #666;
+  text-align: center;
+}
